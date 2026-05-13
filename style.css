@@ -1,0 +1,46 @@
+/* 白黒化 */
+.monochrome-media-extension-filter img,
+.monochrome-media-extension-filter video,
+.monochrome-media-extension-filter picture,
+.monochrome-media-extension-filter canvas {
+    filter: grayscale(100%) !important;
+}
+
+/* 右下ボタン */
+#monochrome-toggle-button {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+
+    width: 64px;
+    height: 64px;
+
+    border-radius: 50%;
+    border: none;
+
+    background: #222;
+    color: white;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    z-index: 2147483647;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.3);
+
+    transition:
+        transform 0.2s,
+        background 0.2s;
+}
+
+#monochrome-toggle-button:hover {
+    transform: scale(1.08);
+}
+
+#monochrome-toggle-button.active {
+    background: #f5f5f5;
+    color: black;
+}

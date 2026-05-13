@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "NicoMono　～ For Naphtha Shortage.",
+    "version": "0.2525",
+    "description": "ナフサ不足のために，ニコニコを白黒にできる拡張機能",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.nicovideo.jp/*",
+                "https://live.nicovideo.jp/*",
+                "https://seiga.nicovideo.jp/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "style.css"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "permissions": []
+}
